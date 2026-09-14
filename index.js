@@ -9,11 +9,6 @@ function make_capital(sentence) {
 
 console.log(make_capital("you are my sunshine"));
 
-
-
-
-
-
 function max(num1, num2, num3) {
   let largest_number = num1;
 
@@ -26,10 +21,6 @@ function max(num1, num2, num3) {
   return largest_number;
 }
 console.log(max(100, 50, 80));
-
-
-
-
 
 function right(string) {
   if (string.length < 3) {
@@ -44,5 +35,18 @@ function right(string) {
   return new_string;
 }
 
+console.log(right("school"));
 
-console.log(right("school"))
+function angle_Type(num) {
+  if (num < 90) {
+    return "Acute";
+  } else if (num == 90) {
+    return "Right";
+  } else if (90 < num && num < 180) {
+    return "Obtuse";
+  } else if (num == 180) {
+    return "Straight";
+  }
+}
+
+console.log(angle_Type(90));
