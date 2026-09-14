@@ -50,3 +50,37 @@ function angle_Type(num) {
 }
 
 console.log(angle_Type(90));
+
+
+
+
+
+
+
+function array_max_sum(array,k){
+let sum =0;
+  for(i=0;i<k;i++){
+  sum+=array[i];
+}
+
+
+let maxsum=sum;
+
+for (let i = k; i < array.length; i++) {
+    let newsum = sum - array[i - k] + array[i];
+    sum=newsum;
+}
+
+
+
+if(sum>maxsum){
+  maxsum=sum;
+}
+
+return maxsum;
+}
+
+
+console.log(array_max_sum([1, 2, 3, 14, 5], 2));
+console.log(array_max_sum([2, 3, 5, 1, 6], 3))
+console.log(array_max_sum([9, 3, 5, 1, 7], 2))
