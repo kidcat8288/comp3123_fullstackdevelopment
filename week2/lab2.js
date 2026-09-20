@@ -10,7 +10,6 @@ const gretter = (myArray, counter) => {
 
 gretter(["Randy Savage", "Ric Flair", "Hulk Hogan"], 3);
 
-
 //exercise 2
 
 const string = "fooBar";
@@ -55,20 +54,28 @@ const calculateProduct = array.reduce(
 
 //exercise 6
 
+class Car {
+  constructor(modal, year) {
+    this.model = modal;
+    this.year = year;
+  }
 
+  details() {
+    return `Model:${this.model} Engine: ${this.year}`;
+  }
+}
 
+class Seden extends Car {
+  constructor(model, year, balance) {
+    super(model, year);
 
+    this.balance = balance;
+  }
 
-
-
-
-
-
-
-
-
-
-
+  info() {
+    return `${this.model} has a balance of ${this.balance}`;
+  }
+}
 
 console.log(captilizedColors);
 console.log(capitalize("fooBar"));
@@ -76,3 +83,9 @@ console.log(capitalize("nodeJs"));
 console.log(filterLessThan20);
 console.log(calculateSum);
 console.log(calculateProduct);
+
+const car2 = new Car("Potiac Firebird", 1976);
+console.log(car2.details());
+
+const seden = new Seden("Volvo sd",2018,30000);
+console.log(seden.info())

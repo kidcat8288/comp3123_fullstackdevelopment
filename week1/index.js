@@ -20,7 +20,17 @@ function max(num1, num2, num3) {
   }
   return largest_number;
 }
-console.log(max(100, 50, 80));
+console.log(max (1,0,1));
+console.log(max (0,-10,-20));
+console.log(max (1000,510,440));
+
+
+
+
+
+
+
+
 
 function right(string) {
   if (string.length < 3) {
@@ -35,7 +45,15 @@ function right(string) {
   return new_string;
 }
 
-console.log(right("school"));
+console.log(right("Python"));
+console.log(right("JavaScript"));
+console.log(right("Hi"));
+
+
+
+
+
+
 
 function angle_Type(num) {
   if (num < 90) {
@@ -49,7 +67,11 @@ function angle_Type(num) {
   }
 }
 
-console.log(angle_Type(90));
+console.log(angle_Type(47))
+console.log(angle_Type(90))
+console.log(angle_Type(145))
+console.log(angle_Type(180))
+
 
 
 
