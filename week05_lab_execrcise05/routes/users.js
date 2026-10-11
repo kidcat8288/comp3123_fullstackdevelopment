@@ -71,7 +71,7 @@ routerUser.post('/login', (req,res) => {
     in HTML format like <b>${username} successfully logout.<b>
 */
 routerUser.get('/logout', (req,res) => {
-  const username=req.querry.username;
+  const username=req.query.username;
   res.send(`<b>${username} successfully logout.</b>`)
 });
 
