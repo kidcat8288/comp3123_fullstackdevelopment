@@ -1,0 +1,70 @@
+.form_box {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 2px solid green;
+  text-align: center;
+}
+
+.form_row {
+  display: flex;
+  gap: 10px;
+}
+
+.form_row .field {
+  flex: 1;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submit_btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+
+.output_box {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  border: 1px solid #00b050;
+}
+
+.output_row {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.output_label {
+  width: 45%;
+  text-align: right;
+  padding-right: 15px;
+  font-weight: bold;
+  color: #00b050;
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+.output_value {
+  font-family: Georgia, serif;
+  font-size: 20px;
+}
